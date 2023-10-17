@@ -10,10 +10,35 @@ const Button: FunctionComponent = () => {
 
   return (
     <button
-      className="cursor-pointer py-[35px] px-[39px] bg-[transparent] flex-1 rounded-lg [background:linear-gradient(180deg,_#0099db,_#1e6dd5)] box-border h-[110px] flex flex-row items-center justify-center border-[2px] border-solid border-gray-300"
+      style={{
+        cursor: "pointer",
+        border: "2px solid rgba(0, 0, 0, 0.2)",
+        padding: "35px 39px",
+        backgroundColor: "transparent",
+        flex: "1",
+        borderRadius: "8px",
+        background: "linear-gradient(180deg, #0099db, #1e6dd5)",
+        boxSizing: "border-box",
+        height: "110px",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
       onClick={onButtonClick}
     >
-      <b className="flex-1 relative text-5xl tracking-[0.02em] leading-[120%] font-baloo-bhai-2 text-white text-center">
+      <b
+        style={{
+          flex: "1",
+          position: "relative",
+          fontSize: "24px",
+          letterSpacing: "0.02em",
+          lineHeight: "120%",
+          fontFamily: "'Baloo Bhai 2'",
+          color: "#fff",
+          textAlign: "center",
+        }}
+      >
         Play Game
       </b>
     </button>

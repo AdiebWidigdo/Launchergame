@@ -4,7 +4,20 @@ import Button from "./button";
 
 const ButtomSection: FunctionComponent = () => {
   return (
-    <div className="self-stretch flex flex-row items-start justify-start gap-[11px] text-left text-base text-white font-baloo-bhai-2">
+    <div
+      style={{
+        alignSelf: "stretch",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        gap: "11px",
+        textAlign: "left",
+        fontSize: "16px",
+        color: "#fff",
+        fontFamily: "'Baloo Bhai 2'",
+      }}
+    >
       <UpdateNotesProgress />
       <Button />
     </div>

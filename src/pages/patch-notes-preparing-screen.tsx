@@ -9,358 +9,1658 @@ const PatchNotesPreparingScreen: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="relative w-full h-[813px] overflow-hidden bg-[url('/public/patchnotesupdatingfinish@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-3xs text-lightslategray font-baloo-2">
-      <div className="absolute top-[calc(50%_-_299.5px)] left-[calc(50%_-_400px)] rounded-2xl [background:linear-gradient(180deg,_#262b44,_#3a4466)] w-[800px] h-[600px] flex flex-col items-center justify-start p-4 box-border gap-[8px] mix-blend-normal">
-        <div className="flex flex-row items-start justify-start gap-[8px]">
-          <div className="rounded-lg bg-gray-200 box-border h-[443px] flex flex-row items-start justify-start pt-2 px-1 pb-0 gap-[8px] border-[2px] border-solid border-gray-300">
-            <div className="rounded-lg w-[229px] h-[431px] overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[8px]">
-              <div className="self-stretch rounded-md [background:linear-gradient(180deg,_#5a6988,_rgba(90,_105,_136,_0))] flex flex-row items-center justify-center py-1 px-2 gap-[8px] text-sm text-white font-baloo-bhai-2">
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "813px",
+        overflow: "hidden",
+        backgroundImage: "url('/patchnotesupdatingfinish@3x.png')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top",
+        textAlign: "left",
+        fontSize: "10px",
+        color: "#8b9bb4",
+        fontFamily: "'Baloo 2'",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: "calc(50% - 299.5px)",
+          left: "calc(50% - 400px)",
+          borderRadius: "16px",
+          background: "linear-gradient(180deg, #262b44, #3a4466)",
+          width: "800px",
+          height: "600px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          padding: "16px",
+          boxSizing: "border-box",
+          gap: "8px",
+          mixBlendMode: "normal",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            gap: "8px",
+          }}
+        >
+          <div
+            style={{
+              borderRadius: "8px",
+              backgroundColor: "rgba(0, 0, 0, 0.1)",
+              border: "2px solid rgba(0, 0, 0, 0.2)",
+              boxSizing: "border-box",
+              height: "443px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              padding: "8px 4px 0px",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                borderRadius: "8px",
+                width: "229px",
+                height: "431px",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                gap: "8px",
+              }}
+            >
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  borderRadius: "6px",
+                  background:
+                    "linear-gradient(180deg, #5a6988, rgba(90, 105, 136, 0))",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "4px 8px",
+                  gap: "8px",
+                  fontSize: "14px",
+                  color: "#fff",
+                  fontFamily: "'Baloo Bhai 2'",
+                }}
+              >
                 <img
-                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  style={{
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
                   alt=""
                   src="/mingcuteannouncementline.svg"
                 />
-                <b className="relative tracking-[0.02em]">{`News & Update`}</b>
+                <b
+                  style={{ position: "relative", letterSpacing: "0.02em" }}
+                >{`News & Update`}</b>
               </div>
-              <div className="relative rounded-md bg-gray-100 w-56 h-48">
-                <div className="absolute top-[140px] left-[9.5px] flex flex-col items-start justify-start">
-                  <div className="w-[204px] flex flex-row items-start justify-between">
-                    <div className="relative tracking-[0.02em] font-semibold">
+              <div
+                style={{
+                  position: "relative",
+                  borderRadius: "6px",
+                  backgroundColor: "#22283b",
+                  width: "224px",
+                  height: "192px",
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "140px",
+                    left: "9.5px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "204px",
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        letterSpacing: "0.02em",
+                        fontWeight: "600",
+                      }}
+                    >
                       Game Design
                     </div>
-                    <div className="relative font-semibold">{`2 months ago `}</div>
+                    <div
+                      style={{ position: "relative", fontWeight: "600" }}
+                    >{`2 months ago `}</div>
                   </div>
-                  <div className="relative font-semibold text-lavender flex items-center w-[204px]">{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
+                  <div
+                    style={{
+                      position: "relative",
+                      fontWeight: "600",
+                      color: "#cadbf5",
+                      display: "flex",
+                      alignItems: "center",
+                      width: "204px",
+                    }}
+                  >{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
                 </div>
                 <img
-                  className="absolute top-[0px] left-[-0.5px] rounded-md w-56 h-[136px] object-cover"
+                  style={{
+                    position: "absolute",
+                    top: "0px",
+                    left: "-0.5px",
+                    borderRadius: "6px",
+                    width: "224px",
+                    height: "136px",
+                    objectFit: "cover",
+                  }}
                   alt=""
                   src="/rectangle-1016@2x.png"
                 />
               </div>
-              <div className="relative rounded-md bg-gray-100 w-56 h-48">
-                <div className="absolute top-[140px] left-[9.5px] flex flex-col items-start justify-start">
-                  <div className="w-[204px] flex flex-row items-start justify-between">
-                    <div className="relative tracking-[0.02em] font-semibold">
+              <div
+                style={{
+                  position: "relative",
+                  borderRadius: "6px",
+                  backgroundColor: "#22283b",
+                  width: "224px",
+                  height: "192px",
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "140px",
+                    left: "9.5px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "204px",
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        letterSpacing: "0.02em",
+                        fontWeight: "600",
+                      }}
+                    >
                       Game Design
                     </div>
-                    <div className="relative font-semibold">{`2 months ago `}</div>
+                    <div
+                      style={{ position: "relative", fontWeight: "600" }}
+                    >{`2 months ago `}</div>
                   </div>
-                  <div className="relative font-semibold text-lavender flex items-center w-[204px]">{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
+                  <div
+                    style={{
+                      position: "relative",
+                      fontWeight: "600",
+                      color: "#cadbf5",
+                      display: "flex",
+                      alignItems: "center",
+                      width: "204px",
+                    }}
+                  >{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
                 </div>
                 <img
-                  className="absolute top-[0px] left-[-0.5px] rounded-md w-56 h-[136px] object-cover"
+                  style={{
+                    position: "absolute",
+                    top: "0px",
+                    left: "-0.5px",
+                    borderRadius: "6px",
+                    width: "224px",
+                    height: "136px",
+                    objectFit: "cover",
+                  }}
                   alt=""
                   src="/rectangle-10161@2x.png"
                 />
               </div>
             </div>
-            <div className="rounded-md bg-gray-200 box-border w-[18px] h-[427px] flex flex-row items-start justify-center pt-0 px-0 pb-2 border-[2px] border-solid border-gray-200">
-              <div className="rounded-md [background:linear-gradient(180deg,_#0099db,_#1e6dd5)] box-border w-4 flex flex-col items-start justify-start py-10 px-0.5 gap-[2px] border-[2px] border-solid border-gray-300">
-                <div className="relative rounded bg-steelblue w-2 h-px" />
-                <div className="relative rounded bg-steelblue w-2 h-px" />
-                <div className="relative rounded bg-steelblue w-2 h-px" />
+            <div
+              style={{
+                borderRadius: "6px",
+                backgroundColor: "rgba(0, 0, 0, 0.1)",
+                border: "2px solid rgba(0, 0, 0, 0.1)",
+                boxSizing: "border-box",
+                width: "18px",
+                height: "427px",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                padding: "0px 0px 8px",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "6px",
+                  background: "linear-gradient(180deg, #0099db, #1e6dd5)",
+                  border: "2px solid rgba(0, 0, 0, 0.2)",
+                  boxSizing: "border-box",
+                  width: "16px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  padding: "40px 2px",
+                  gap: "2px",
+                }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    borderRadius: "4px",
+                    backgroundColor: "#0571ad",
+                    width: "8px",
+                    height: "1px",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "relative",
+                    borderRadius: "4px",
+                    backgroundColor: "#0571ad",
+                    width: "8px",
+                    height: "1px",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "relative",
+                    borderRadius: "4px",
+                    backgroundColor: "#0571ad",
+                    width: "8px",
+                    height: "1px",
+                  }}
+                />
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[8px] text-xs text-white font-baloo-bhai-2">
+          <div
+            style={{
+              alignSelf: "stretch",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "8px",
+              fontSize: "12px",
+              color: "#fff",
+              fontFamily: "'Baloo Bhai 2'",
+            }}
+          >
             <img
-              className="relative rounded-lg w-[488px] h-40 object-cover"
+              style={{
+                position: "relative",
+                borderRadius: "8px",
+                width: "488px",
+                height: "160px",
+                objectFit: "cover",
+              }}
               alt=""
               src="/banner-1@2x.png"
             />
-            <div className="rounded-md bg-gray-100 w-[487px] h-6 flex flex-row items-center justify-start py-0 px-4 box-border gap-[8px]">
+            <div
+              style={{
+                borderRadius: "6px",
+                backgroundColor: "#22283b",
+                width: "487px",
+                height: "24px",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                padding: "0px 16px",
+                boxSizing: "border-box",
+                gap: "8px",
+              }}
+            >
               <img
-                className="relative w-[18px] h-[17px] overflow-hidden shrink-0 hidden"
+                style={{
+                  position: "relative",
+                  width: "18px",
+                  height: "17px",
+                  overflow: "hidden",
+                  flexShrink: "0",
+                  display: "none",
+                }}
                 alt=""
                 src="/fontistoradiobtnactive.svg"
               />
-              <b className="self-stretch flex-1 relative tracking-[0.02em] flex items-center">{`Follow Our Social Media `}</b>
-              <div className="flex flex-row items-start justify-start gap-[5px]">
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-5 h-5 overflow-hidden shrink-0">
+              <b
+                style={{
+                  alignSelf: "stretch",
+                  flex: "1",
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >{`Follow Our Social Media `}</b>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "5px",
+                }}
+              >
+                <button
+                  style={{
+                    cursor: "pointer",
+                    border: "none",
+                    padding: "0",
+                    backgroundColor: "transparent",
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
+                >
                   <img
-                    className="absolute h-[56.47%] w-[68.46%] top-[22.5%] right-[21.55%] bottom-[21.03%] left-[10%] max-w-full overflow-hidden max-h-full"
+                    style={{
+                      position: "absolute",
+                      height: "56.47%",
+                      width: "68.46%",
+                      top: "22.5%",
+                      right: "21.55%",
+                      bottom: "21.03%",
+                      left: "10%",
+                      maxWidth: "100%",
+                      overflow: "hidden",
+                      maxHeight: "100%",
+                    }}
                     alt=""
                     src="/telegram.svg"
                   />
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-5 h-5 overflow-hidden shrink-0">
+                <button
+                  style={{
+                    cursor: "pointer",
+                    border: "none",
+                    padding: "0",
+                    backgroundColor: "transparent",
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
+                >
                   <img
-                    className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_6.88px)] w-[13.33px] h-[9.15px]"
+                    style={{
+                      position: "absolute",
+                      top: "calc(50% - 4px)",
+                      left: "calc(50% - 6.88px)",
+                      width: "13.33px",
+                      height: "9.15px",
+                    }}
                     alt=""
                     src="/vector.svg"
                   />
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-5 h-5">
+                <button
+                  style={{
+                    cursor: "pointer",
+                    border: "none",
+                    padding: "0",
+                    backgroundColor: "transparent",
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                  }}
+                >
                   <img
-                    className="absolute h-[54.55%] w-3/5 top-[25%] right-[17.5%] bottom-[20.45%] left-[22.5%] max-w-full overflow-hidden max-h-full"
+                    style={{
+                      position: "absolute",
+                      height: "54.55%",
+                      width: "60%",
+                      top: "25%",
+                      right: "17.5%",
+                      bottom: "20.45%",
+                      left: "22.5%",
+                      maxWidth: "100%",
+                      overflow: "hidden",
+                      maxHeight: "100%",
+                    }}
                     alt=""
                     src="/group-3645.svg"
                   />
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-5 h-5 overflow-hidden shrink-0">
+                <button
+                  style={{
+                    cursor: "pointer",
+                    border: "none",
+                    padding: "0",
+                    backgroundColor: "transparent",
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
+                >
                   <img
-                    className="absolute h-[59.38%] w-[66.64%] top-[19.79%] right-[16.67%] bottom-[20.83%] left-[16.69%] max-w-full overflow-hidden max-h-full"
+                    style={{
+                      position: "absolute",
+                      height: "59.38%",
+                      width: "66.64%",
+                      top: "19.79%",
+                      right: "16.67%",
+                      bottom: "20.83%",
+                      left: "16.69%",
+                      maxWidth: "100%",
+                      overflow: "hidden",
+                      maxHeight: "100%",
+                    }}
                     alt=""
                     src="/vector1.svg"
                   />
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-5 h-5 overflow-hidden shrink-0">
+                <button
+                  style={{
+                    cursor: "pointer",
+                    border: "none",
+                    padding: "0",
+                    backgroundColor: "transparent",
+                    position: "relative",
+                    width: "20px",
+                    height: "20px",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
+                >
                   <img
-                    className="absolute h-3/6 w-[62.5%] top-[25%] right-[20.01%] bottom-[25%] left-[17.49%] max-w-full overflow-hidden max-h-full"
+                    style={{
+                      position: "absolute",
+                      height: "50%",
+                      width: "62.5%",
+                      top: "25%",
+                      right: "20.01%",
+                      bottom: "25%",
+                      left: "17.49%",
+                      maxWidth: "100%",
+                      overflow: "hidden",
+                      maxHeight: "100%",
+                    }}
                     alt=""
                     src="/vector2.svg"
                   />
                 </button>
               </div>
-              <div className="relative tracking-[0.02em] font-semibold text-lightslategray text-right hidden">
+              <div
+                style={{
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                  color: "#8b9bb4",
+                  textAlign: "right",
+                  display: "none",
+                }}
+              >
                 Monday, 12 August 2023
               </div>
             </div>
-            <div className="flex-1 rounded-md bg-gray-100 w-[487px] overflow-hidden flex flex-row items-start justify-start pt-3 px-3 pb-0 box-border text-sm">
-              <div className="w-[475px] h-[227px] flex flex-col items-start justify-start gap-[16px]">
-                <div className="flex flex-col items-start justify-start">
-                  <div className="w-[456px] flex flex-row items-center justify-start gap-[8px]">
-                    <b className="flex-1 relative tracking-[0.02em]">{`Patch Notes 1.00.92 `}</b>
-                    <div className="flex flex-row items-start justify-start gap-[4px]">
-                      <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[15px] h-[15px] overflow-hidden shrink-0">
+            <div
+              style={{
+                flex: "1",
+                borderRadius: "6px",
+                backgroundColor: "#22283b",
+                width: "487px",
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+                padding: "12px 12px 0px",
+                boxSizing: "border-box",
+                fontSize: "14px",
+              }}
+            >
+              <div
+                style={{
+                  width: "475px",
+                  height: "227px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "456px",
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <b
+                      style={{
+                        flex: "1",
+                        position: "relative",
+                        letterSpacing: "0.02em",
+                      }}
+                    >{`Patch Notes 1.00.92 `}</b>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "flex-start",
+                        justifyContent: "flex-start",
+                        gap: "4px",
+                      }}
+                    >
+                      <button
+                        style={{
+                          cursor: "pointer",
+                          border: "none",
+                          padding: "0",
+                          backgroundColor: "transparent",
+                          position: "relative",
+                          width: "15px",
+                          height: "15px",
+                          overflow: "hidden",
+                          flexShrink: "0",
+                        }}
+                      >
                         <img
-                          className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
+                          style={{
+                            position: "absolute",
+                            height: "100%",
+                            width: "100%",
+                            top: "0%",
+                            right: "0%",
+                            bottom: "0%",
+                            left: "0%",
+                            maxWidth: "100%",
+                            overflow: "hidden",
+                            maxHeight: "100%",
+                          }}
                           alt=""
                           src="/vector3.svg"
                         />
                       </button>
-                      <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[15px] h-[15px] overflow-hidden shrink-0">
+                      <button
+                        style={{
+                          cursor: "pointer",
+                          border: "none",
+                          padding: "0",
+                          backgroundColor: "transparent",
+                          position: "relative",
+                          width: "15px",
+                          height: "15px",
+                          overflow: "hidden",
+                          flexShrink: "0",
+                        }}
+                      >
                         <img
-                          className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
+                          style={{
+                            position: "absolute",
+                            height: "100%",
+                            width: "100%",
+                            top: "0%",
+                            right: "0%",
+                            bottom: "0%",
+                            left: "0%",
+                            maxWidth: "100%",
+                            overflow: "hidden",
+                            maxHeight: "100%",
+                          }}
                           alt=""
                           src="/vector4.svg"
                         />
                       </button>
                     </div>
                   </div>
-                  <div className="relative text-3xs tracking-[0.02em] font-semibold font-baloo-2 text-lightslategray inline-block w-[334px]">
+                  <div
+                    style={{
+                      position: "relative",
+                      fontSize: "10px",
+                      letterSpacing: "0.02em",
+                      fontWeight: "600",
+                      fontFamily: "'Baloo 2'",
+                      color: "#8b9bb4",
+                      display: "inline-block",
+                      width: "334px",
+                    }}
+                  >
                     New Game Mode: Capture Flag! - Experimenting with 254p, also
                     playable on 128p and 64p series.
                   </div>
                 </div>
-                <div className="flex flex-col items-start justify-start gap-[4px] text-3xs text-lightslategray font-baloo-2">
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "4px",
+                    fontSize: "10px",
+                    color: "#8b9bb4",
+                    fontFamily: "'Baloo 2'",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex-1 rounded-md bg-gray-100 w-[487px] overflow-hidden hidden flex-row items-start justify-start pt-3 px-3 pb-0 box-border text-sm">
-              <div className="w-[475px] h-[227px] flex flex-col items-start justify-start gap-[8px]">
-                <div className="flex flex-col items-start justify-start">
-                  <b className="self-stretch relative tracking-[0.02em]">{`Patch Notes 1.00.92 `}</b>
-                  <div className="self-stretch relative text-3xs tracking-[0.02em] font-semibold font-baloo-2 text-lightslategray">
+            <div
+              style={{
+                flex: "1",
+                borderRadius: "6px",
+                backgroundColor: "#22283b",
+                width: "487px",
+                overflow: "hidden",
+                display: "none",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+                padding: "12px 12px 0px",
+                boxSizing: "border-box",
+                fontSize: "14px",
+              }}
+            >
+              <div
+                style={{
+                  width: "475px",
+                  height: "227px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "8px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                  }}
+                >
+                  <b
+                    style={{
+                      alignSelf: "stretch",
+                      position: "relative",
+                      letterSpacing: "0.02em",
+                    }}
+                  >{`Patch Notes 1.00.92 `}</b>
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      position: "relative",
+                      fontSize: "10px",
+                      letterSpacing: "0.02em",
+                      fontWeight: "600",
+                      fontFamily: "'Baloo 2'",
+                      color: "#8b9bb4",
+                    }}
+                  >
                     New Game Mode: Capture Flag! - Experimenting with 254p, also
                     playable on 128p and 64p series.
                   </div>
                 </div>
-                <div className="flex flex-col items-start justify-start gap-[4px] text-3xs text-lightslategray font-baloo-2">
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "4px",
+                    fontSize: "10px",
+                    color: "#8b9bb4",
+                    fontFamily: "'Baloo 2'",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium flex items-end w-[441px] h-[26px] shrink-0">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        width: "441px",
+                        height: "26px",
+                        flexShrink: "0",
+                      }}
+                    >
                       Capture the flag, if flag is carried over to any safe
                       zone, main base etc, iw will be auto teklleported back to
                       flag’s spawn to prevent someone keeping flag in safe zone.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       UI Improvements for Capture The Flag.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       The spectator mode has been further improved.
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start gap-[8px]">
-                    <div className="relative rounded-[50%] bg-lightslategray w-1 h-1" />
-                    <div className="relative leading-[150%] font-medium">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "50%",
+                        backgroundColor: "#8b9bb4",
+                        width: "4px",
+                        height: "4px",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "150%",
+                        fontWeight: "500",
+                      }}
+                    >
                       Player lag has been improved during rope climbing.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="rounded-md bg-gray-100 w-[487px] h-[23px] hidden flex-row items-center justify-start py-0 px-4 box-border gap-[8px]">
+            <div
+              style={{
+                borderRadius: "6px",
+                backgroundColor: "#22283b",
+                width: "487px",
+                height: "23px",
+                display: "none",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                padding: "0px 16px",
+                boxSizing: "border-box",
+                gap: "8px",
+              }}
+            >
               <img
-                className="relative w-[18px] h-[17px] overflow-hidden shrink-0"
+                style={{
+                  position: "relative",
+                  width: "18px",
+                  height: "17px",
+                  overflow: "hidden",
+                  flexShrink: "0",
+                }}
                 alt=""
                 src="/fontistoradiobtnactive1.svg"
               />
-              <b className="self-stretch flex-1 relative tracking-[0.02em] flex items-center">
+              <b
+                style={{
+                  alignSelf: "stretch",
+                  flex: "1",
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
                 Last Played
               </b>
-              <div className="relative tracking-[0.02em] font-semibold text-lightslategray text-right">
+              <div
+                style={{
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                  color: "#8b9bb4",
+                  textAlign: "right",
+                }}
+              >
                 Monday, 12 August 2023
               </div>
             </div>
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[11px] text-base text-white font-baloo-bhai-2">
-          <div className="w-[541px] flex flex-col items-start justify-start gap-[7px]">
-            <div className="self-stretch rounded-lg bg-gray-300 flex flex-col items-start justify-start py-2 px-4 gap-[2px]">
-              <b className="relative tracking-[0.02em]">Update Notes</b>
-              <div className="self-stretch flex flex-row items-start justify-between text-xs text-lavender font-baloo-2">
-                <div className="w-[148px] flex flex-row items-start justify-start">
-                  <div className="relative font-semibold">
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            gap: "11px",
+            fontSize: "16px",
+            color: "#fff",
+            fontFamily: "'Baloo Bhai 2'",
+          }}
+        >
+          <div
+            style={{
+              width: "541px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "7px",
+            }}
+          >
+            <div
+              style={{
+                alignSelf: "stretch",
+                borderRadius: "8px",
+                backgroundColor: "rgba(0, 0, 0, 0.2)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+                padding: "8px 16px",
+                gap: "2px",
+              }}
+            >
+              <b style={{ position: "relative", letterSpacing: "0.02em" }}>
+                Update Notes
+              </b>
+              <div
+                style={{
+                  alignSelf: "stretch",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "space-between",
+                  fontSize: "12px",
+                  color: "#cadbf5",
+                  fontFamily: "'Baloo 2'",
+                }}
+              >
+                <div
+                  style={{
+                    width: "148px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                  }}
+                >
+                  <div style={{ position: "relative", fontWeight: "600" }}>
                     Prepare to download New updates 1.00.92 (1.6 GB)
                   </div>
                 </div>
-                <div className="relative font-semibold">
+                <div style={{ position: "relative", fontWeight: "600" }}>
                   Time Remaining: 88:88:88
                 </div>
               </div>
             </div>
-            <div className="self-stretch rounded-lg bg-gray-300 h-6 flex flex-col items-center justify-start text-sm font-baloo-2">
-              <div className="flex-1 rounded-lg [background:linear-gradient(180deg,_#3e8948,_#265c42)] overflow-hidden hidden flex-row items-center justify-center py-0 px-48 border-[2px] border-solid border-gray-300">
-                <b className="relative">80%</b>
+            <div
+              style={{
+                alignSelf: "stretch",
+                borderRadius: "8px",
+                backgroundColor: "rgba(0, 0, 0, 0.2)",
+                height: "24px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                fontSize: "14px",
+                fontFamily: "'Baloo 2'",
+              }}
+            >
+              <div
+                style={{
+                  flex: "1",
+                  borderRadius: "8px",
+                  background: "linear-gradient(180deg, #3e8948, #265c42)",
+                  border: "2px solid rgba(0, 0, 0, 0.2)",
+                  overflow: "hidden",
+                  display: "none",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "0px 192px",
+                }}
+              >
+                <b style={{ position: "relative" }}>80%</b>
               </div>
-              <b className="relative">0%</b>
+              <b style={{ position: "relative" }}>0%</b>
             </div>
           </div>
           <button
-            className="cursor-pointer p-4 bg-[transparent] flex-1 rounded-3xs [background:linear-gradient(180deg,_#8b9bb4,_#5a6988)] box-border h-[110px] flex flex-row items-center justify-center border-[2px] border-solid border-gray-300"
+            style={{
+              cursor: "pointer",
+              border: "2px solid rgba(0, 0, 0, 0.2)",
+              padding: "16px",
+              backgroundColor: "transparent",
+              flex: "1",
+              borderRadius: "10px",
+              background: "linear-gradient(180deg, #8b9bb4, #5a6988)",
+              boxSizing: "border-box",
+              height: "110px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
             onClick={onButtonClick}
           >
-            <b className="relative text-5xl tracking-[0.02em] leading-[120%] font-baloo-bhai-2 text-white text-center">
-              <p className="m-0">Prepare to</p>
-              <p className="m-0">Update</p>
+            <b
+              style={{
+                position: "relative",
+                fontSize: "24px",
+                letterSpacing: "0.02em",
+                lineHeight: "120%",
+                fontFamily: "'Baloo Bhai 2'",
+                color: "#fff",
+                textAlign: "center",
+              }}
+            >
+              <p style={{ margin: "" }}>Prepare to</p>
+              <p style={{ margin: "" }}>Update</p>
             </b>
           </button>
         </div>

@@ -4,7 +4,19 @@ import BannerPatchnotes from "./banner-patchnotes";
 
 const TopSection: FunctionComponent = () => {
   return (
-    <div className="flex flex-row items-start justify-start gap-[8px] text-left text-3xs text-lightslategray font-baloo-2">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        gap: "8px",
+        textAlign: "left",
+        fontSize: "10px",
+        color: "#8b9bb4",
+        fontFamily: "'Baloo 2'",
+      }}
+    >
       <SetArticles />
       <BannerPatchnotes />
     </div>

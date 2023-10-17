@@ -2,54 +2,263 @@ import { FunctionComponent } from "react";
 
 const SetArticles: FunctionComponent = () => {
   return (
-    <div className="rounded-lg bg-gray-200 box-border h-[443px] flex flex-row items-start justify-start pt-2 px-1 pb-0 gap-[8px] text-left text-3xs text-lightslategray font-baloo-2 border-[2px] border-solid border-gray-300">
-      <div className="rounded-lg w-[229px] h-[431px] overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[8px]">
-        <div className="self-stretch rounded-md [background:linear-gradient(180deg,_#5a6988,_rgba(90,_105,_136,_0))] flex flex-row items-center justify-center py-1 px-2 gap-[8px] text-sm text-white font-baloo-bhai-2">
+    <div
+      style={{
+        borderRadius: "8px",
+        backgroundColor: "rgba(0, 0, 0, 0.1)",
+        border: "2px solid rgba(0, 0, 0, 0.2)",
+        boxSizing: "border-box",
+        height: "443px",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        padding: "8px 4px 0px",
+        gap: "8px",
+        textAlign: "left",
+        fontSize: "10px",
+        color: "#8b9bb4",
+        fontFamily: "'Baloo 2'",
+      }}
+    >
+      <div
+        style={{
+          borderRadius: "8px",
+          width: "229px",
+          height: "431px",
+          overflow: "hidden",
+          flexShrink: "0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          gap: "8px",
+        }}
+      >
+        <div
+          style={{
+            alignSelf: "stretch",
+            borderRadius: "6px",
+            background:
+              "linear-gradient(180deg, #5a6988, rgba(90, 105, 136, 0))",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "4px 8px",
+            gap: "8px",
+            fontSize: "14px",
+            color: "#fff",
+            fontFamily: "'Baloo Bhai 2'",
+          }}
+        >
           <img
-            className="relative w-5 h-5 overflow-hidden shrink-0"
+            style={{
+              position: "relative",
+              width: "20px",
+              height: "20px",
+              overflow: "hidden",
+              flexShrink: "0",
+            }}
             alt=""
             src="/mingcuteannouncementline.svg"
           />
-          <b className="relative tracking-[0.02em]">{`News & Update`}</b>
+          <b
+            style={{ position: "relative", letterSpacing: "0.02em" }}
+          >{`News & Update`}</b>
         </div>
-        <div className="relative rounded-md bg-gray-100 w-56 h-48">
-          <div className="absolute top-[140px] left-[9.5px] flex flex-col items-start justify-start">
-            <div className="w-[204px] flex flex-row items-start justify-between">
-              <div className="relative tracking-[0.02em] font-semibold">
+        <div
+          style={{
+            position: "relative",
+            borderRadius: "6px",
+            backgroundColor: "#22283b",
+            width: "224px",
+            height: "192px",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "140px",
+              left: "9.5px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+            }}
+          >
+            <div
+              style={{
+                width: "204px",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+              }}
+            >
+              <div
+                style={{
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                }}
+              >
                 Game Design
               </div>
-              <div className="relative font-semibold">{`2 months ago `}</div>
+              <div
+                style={{ position: "relative", fontWeight: "600" }}
+              >{`2 months ago `}</div>
             </div>
-            <div className="relative font-semibold text-lavender flex items-center w-[204px]">{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
+            <div
+              style={{
+                position: "relative",
+                fontWeight: "600",
+                color: "#cadbf5",
+                display: "flex",
+                alignItems: "center",
+                width: "204px",
+              }}
+            >{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
           </div>
           <img
-            className="absolute top-[0px] left-[-0.5px] rounded-md w-56 h-[136px] object-cover"
+            style={{
+              position: "absolute",
+              top: "0px",
+              left: "-0.5px",
+              borderRadius: "6px",
+              width: "224px",
+              height: "136px",
+              objectFit: "cover",
+            }}
             alt=""
             src="/rectangle-1016@2x.png"
           />
         </div>
-        <div className="relative rounded-md bg-gray-100 w-56 h-48">
-          <div className="absolute top-[140px] left-[9.5px] flex flex-col items-start justify-start">
-            <div className="w-[204px] flex flex-row items-start justify-between">
-              <div className="relative tracking-[0.02em] font-semibold">
+        <div
+          style={{
+            position: "relative",
+            borderRadius: "6px",
+            backgroundColor: "#22283b",
+            width: "224px",
+            height: "192px",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "140px",
+              left: "9.5px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+            }}
+          >
+            <div
+              style={{
+                width: "204px",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+              }}
+            >
+              <div
+                style={{
+                  position: "relative",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                }}
+              >
                 Game Design
               </div>
-              <div className="relative font-semibold">{`2 months ago `}</div>
+              <div
+                style={{ position: "relative", fontWeight: "600" }}
+              >{`2 months ago `}</div>
             </div>
-            <div className="relative font-semibold text-lavender flex items-center w-[204px]">{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
+            <div
+              style={{
+                position: "relative",
+                fontWeight: "600",
+                color: "#cadbf5",
+                display: "flex",
+                alignItems: "center",
+                width: "204px",
+              }}
+            >{`Forge Your Path: Smelting, Crafting, Customization & NFT Minting`}</div>
           </div>
           <img
-            className="absolute top-[0px] left-[-0.5px] rounded-md w-56 h-[136px] object-cover"
+            style={{
+              position: "absolute",
+              top: "0px",
+              left: "-0.5px",
+              borderRadius: "6px",
+              width: "224px",
+              height: "136px",
+              objectFit: "cover",
+            }}
             alt=""
             src="/rectangle-10161@2x.png"
           />
         </div>
       </div>
-      <div className="rounded-md bg-gray-200 box-border w-[18px] h-[427px] flex flex-row items-start justify-center pt-0 px-0 pb-2 border-[2px] border-solid border-gray-200">
-        <div className="rounded-md [background:linear-gradient(180deg,_#0099db,_#1e6dd5)] box-border w-4 flex flex-col items-start justify-start py-10 px-0.5 gap-[2px] border-[2px] border-solid border-gray-300">
-          <div className="relative rounded bg-steelblue w-2 h-px" />
-          <div className="relative rounded bg-steelblue w-2 h-px" />
-          <div className="relative rounded bg-steelblue w-2 h-px" />
+      <div
+        style={{
+          borderRadius: "6px",
+          backgroundColor: "rgba(0, 0, 0, 0.1)",
+          border: "2px solid rgba(0, 0, 0, 0.1)",
+          boxSizing: "border-box",
+          width: "18px",
+          height: "427px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          padding: "0px 0px 8px",
+        }}
+      >
+        <div
+          style={{
+            borderRadius: "6px",
+            background: "linear-gradient(180deg, #0099db, #1e6dd5)",
+            border: "2px solid rgba(0, 0, 0, 0.2)",
+            boxSizing: "border-box",
+            width: "16px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            padding: "40px 2px",
+            gap: "2px",
+          }}
+        >
+          <div
+            style={{
+              position: "relative",
+              borderRadius: "4px",
+              backgroundColor: "#0571ad",
+              width: "8px",
+              height: "1px",
+            }}
+          />
+          <div
+            style={{
+              position: "relative",
+              borderRadius: "4px",
+              backgroundColor: "#0571ad",
+              width: "8px",
+              height: "1px",
+            }}
+          />
+          <div
+            style={{
+              position: "relative",
+              borderRadius: "4px",
+              backgroundColor: "#0571ad",
+              width: "8px",
+              height: "1px",
+            }}
+          />
         </div>
       </div>
     </div>

@@ -4,8 +4,37 @@ import ButtomSection from "../components/buttom-section";
 
 const PatchNotesUpdatingFinish: FunctionComponent = () => {
   return (
-    <div className="relative w-full h-[813px] overflow-hidden bg-[url('/public/patchnotesupdatingfinish@3x.png')] bg-cover bg-no-repeat bg-[top]">
-      <div className="absolute top-[calc(50%_-_299.5px)] left-[calc(50%_-_400px)] rounded-2xl [background:linear-gradient(180deg,_#262b44,_#3a4466)] w-[800px] h-[600px] flex flex-col items-center justify-start p-4 box-border gap-[8px] mix-blend-normal">
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "813px",
+        overflow: "hidden",
+        backgroundImage: "url('/patchnotesupdatingfinish@3x.png')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: "calc(50% - 299.5px)",
+          left: "calc(50% - 400px)",
+          borderRadius: "16px",
+          background: "linear-gradient(180deg, #262b44, #3a4466)",
+          width: "800px",
+          height: "600px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          padding: "16px",
+          boxSizing: "border-box",
+          gap: "8px",
+          mixBlendMode: "normal",
+        }}
+      >
         <TopSection />
         <ButtomSection />
       </div>
