@@ -1,0 +1,582 @@
+.mingcuteannouncement-line-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.news-update {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.title {
+  align-self: stretch;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #5a6988, rgba(90, 105, 136, 0));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  gap: 8px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Baloo Bhai 2";
+}
+.game-design {
+  letter-spacing: 0.02em;
+}
+.game-design,
+.months-ago {
+  position: relative;
+  font-weight: 600;
+}
+.game-design-parent {
+  width: 204px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.forge-your-path {
+  position: relative;
+  font-weight: 600;
+  color: #cadbf5;
+  display: flex;
+  align-items: center;
+  width: 204px;
+}
+.frame-parent {
+  position: absolute;
+  top: 140px;
+  left: 9.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.article-1,
+.article-1-child {
+  border-radius: 6px;
+  width: 224px;
+}
+.article-1-child {
+  position: absolute;
+  top: 0;
+  left: -0.5px;
+  height: 136px;
+  object-fit: cover;
+}
+.article-1 {
+  position: relative;
+  background-color: #22283b;
+  height: 192px;
+}
+.articles {
+  border-radius: 8px;
+  width: 229px;
+  height: 431px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.small-slider-child {
+  position: relative;
+  border-radius: 4px;
+  background-color: #0571ad;
+  width: 8px;
+  height: 1px;
+}
+.set-articles,
+.slider,
+.small-slider {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+}
+.small-slider {
+  border-radius: 6px;
+  background: linear-gradient(180deg, #0099db, #1e6dd5);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  width: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px 2px;
+  gap: 2px;
+}
+.set-articles,
+.slider {
+  background-color: rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+.slider {
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 18px;
+  height: 427px;
+  justify-content: center;
+  padding: 0 0 8px;
+}
+.set-articles {
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  height: 443px;
+  justify-content: flex-start;
+  padding: 8px 4px 0;
+  gap: 8px;
+}
+.banner-1-icon {
+  position: relative;
+  border-radius: 8px;
+  width: 488px;
+  height: 160px;
+  object-fit: cover;
+}
+.fontistoradio-btn-active-icon {
+  position: relative;
+  width: 18px;
+  height: 17px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.follow-our-social {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.telegram-icon {
+  position: absolute;
+  height: 56.47%;
+  width: 68.46%;
+  top: 22.5%;
+  right: 21.55%;
+  bottom: 21.03%;
+  left: 10%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.telegran {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.vector-icon {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 6.88px);
+  width: 13.33px;
+  height: 9.15px;
+}
+.x-child {
+  position: absolute;
+  height: 54.55%;
+  width: 60%;
+  top: 25%;
+  right: 17.5%;
+  bottom: 20.45%;
+  left: 22.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.x {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.vector-icon1,
+.vector-icon2 {
+  position: absolute;
+  height: 59.38%;
+  width: 66.64%;
+  top: 19.79%;
+  right: 16.67%;
+  bottom: 20.83%;
+  left: 16.69%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon2 {
+  height: 50%;
+  width: 62.5%;
+  top: 25%;
+  right: 20.01%;
+  bottom: 25%;
+  left: 17.49%;
+}
+.social-media-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.monday-12-august {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: #8b9bb4;
+  text-align: right;
+  display: none;
+}
+.last-played {
+  border-radius: 6px;
+  background-color: #22283b;
+  width: 487px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 16px;
+  box-sizing: border-box;
+  gap: 8px;
+}
+.patch-notes-10092 {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.vector-icon3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.left {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.left-parent,
+.patch-notes-10092-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.patch-notes-10092-parent {
+  width: 456px;
+  align-items: center;
+  gap: 8px;
+}
+.new-game-mode {
+  position: relative;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: "Baloo 2";
+  color: #8b9bb4;
+  display: inline-block;
+  width: 334px;
+}
+.title-notes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.note-child {
+  position: relative;
+  border-radius: 50%;
+  background-color: #8b9bb4;
+  width: 4px;
+  height: 4px;
+}
+.capture-the-flag {
+  display: flex;
+  align-items: flex-end;
+  width: 441px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.capture-the-flag,
+.ui-improvements-for {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.note1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.notes {
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+  color: #8b9bb4;
+  font-family: "Baloo 2";
+}
+.info-notes,
+.notes,
+.patchbotes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.info-notes {
+  width: 475px;
+  height: 227px;
+  flex-direction: column;
+  gap: 16px;
+}
+.patchbotes {
+  flex: 1;
+  border-radius: 6px;
+  background-color: #22283b;
+  width: 487px;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 12px 12px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.new-game-mode1,
+.patch-notes-100921 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.new-game-mode1 {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Baloo 2";
+  color: #8b9bb4;
+}
+.info-notes1,
+.patchbotes1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.info-notes1 {
+  width: 475px;
+  height: 227px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.patchbotes1 {
+  flex: 1;
+  border-radius: 6px;
+  background-color: #22283b;
+  width: 487px;
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  padding: 12px 12px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.fontistoradio-btn-active-icon1 {
+  position: relative;
+  width: 18px;
+  height: 17px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.monday-12-august1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: #8b9bb4;
+  text-align: right;
+}
+.last-played1 {
+  border-radius: 6px;
+  background-color: #22283b;
+  width: 487px;
+  height: 23px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.banner-patchnotes,
+.last-played1,
+.top-section {
+  justify-content: flex-start;
+  gap: 8px;
+}
+.banner-patchnotes {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #fff;
+  font-family: "Baloo Bhai 2";
+}
+.top-section {
+  flex-direction: row;
+}
+.download,
+.info,
+.top-section,
+.update-notes {
+  display: flex;
+  align-items: flex-start;
+}
+.download {
+  width: 148px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.info,
+.update-notes {
+  align-self: stretch;
+}
+.info {
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #cadbf5;
+  font-family: "Baloo 2";
+}
+.update-notes {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 8px 16px;
+  gap: 2px;
+}
+.b {
+  position: relative;
+}
+.wrapper {
+  flex: 1;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #3e8948, #265c42);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 192px;
+}
+.progress-bar,
+.update-notes-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.progress-bar {
+  align-self: stretch;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Baloo 2";
+}
+.update-notes-progress {
+  width: 541px;
+  align-items: flex-start;
+  gap: 7px;
+}
+.prepare-to {
+  margin: 0;
+}
+.prepare-to-update-container {
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+  font-family: "Baloo Bhai 2";
+  color: #fff;
+  text-align: center;
+}
+.buttom-section,
+.button {
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: transparent;
+  flex: 1;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #8b9bb4, #5a6988);
+  box-sizing: border-box;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+}
+.buttom-section {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Baloo Bhai 2";
+}
+.patch-notes-preparing-box {
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 400px);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #262b44, #3a4466);
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  box-sizing: border-box;
+  gap: 8px;
+  mix-blend-mode: normal;
+}
+.patch-notes-preparing-screen {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 10px;
+  color: #8b9bb4;
+  font-family: "Baloo 2";
+}
